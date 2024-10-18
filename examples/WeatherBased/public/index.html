@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Status</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #222222, #222222);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.5s, transform 0.5s;
+    }
+
+    .circle:hover {
+      transform: scale(1.1);
+    }
+
+    .cold {
+      background-color: #3498db;
+    }
+
+    .good {
+      background-color: #2ecc71;
+    }
+
+    .hot {
+      background-color: #e74c3c;
+    }
+
+    #inputContainer {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .device-message {
+      padding: 20px;
+      justify-content: center;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .dropdown-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    select,
+    input[type="number"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #2980b9;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background: #1abc9c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="dropdown-container">
+      <label for="temperatureDropdown" class="device-message">Temperature is Hot when:</label>
+      <select id="temperatureDropdown" onchange="customizeTemperatures(this)">
+      </select>
+    </div>
+    <div class="dropdown-container">
+      <label for="lowHumidity" class="device-message">Low Humidity Limit:</label>
+      <select id="lowHumidity" onchange="customizeHumidityLimits()">
+      </select>
+    </div>
+    <div class="dropdown-container">
+      <label for="highHumidity" class="device-message">High Humidity Limit:</label>
+      <select id="highHumidity" onchange="customizeHumidityLimits()">
+      </select>
+    </div>
+    <div id="weatherCircle" class="circle">Loading...</div>
+    <div id="inputContainer" style="display: none;">
+      <label for="latitude">Latitude:</label>
+      <input type="text" id="latitude" name="latitude">
+      <label for="longitude">Longitude:</label>
+      <input type="text" id="longitude" name="longitude">
+      <button onclick="getWeatherFromInput()">Submit</button>
+    </div>
+    <div id="message" class="device-message" style="display: none;"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
