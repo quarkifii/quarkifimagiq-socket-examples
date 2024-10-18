@@ -2,13 +2,10 @@
 
 In this example GPS Location read and based on the location the socket is turned ON or OFF. Before starting make sure to retrieve the apikey and apisecret as mentioned in [Main](/)
 
-1. ### Create new node server:
-Run : 
+1. ### Setup Web Server:
 
-1. mkdir magiq-server
-2. cd magiq-server
-3. Npm init -y
-4. npm install express  axios crypto
+1. cd magiq-server
+2. npm install
 
    Project Node Structure:
 
@@ -35,12 +32,10 @@ Run :
 - **app.listen**: Starts the Express server on the defined port.
 - **Callback Function**: Logs a message to the console indicating the server is running and the port it's listening on.
 
-2. ### Create new react project :
-Run:	
+2. ### Setup Web View :
 
-1. npx create-react-app my-project
-2. cd my-project
-3. npm install react-leaflet leaflet axios crypto
+1. cd location-magiq
+2. npm install
 
    React Project Structure:
 
