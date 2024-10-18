@@ -8,7 +8,7 @@ In this example laptop power battery level is read and based on the value the so
    pip install -r requirements.txt
 
    ![](docimgs/4a36b2f3-004d-45e6-a7c1-342387b5b045.002.png)
-1. ### magiq\_control.py
+2. ### magiq\_control.py
    This script defines a function to control devices using the MagIQ API.
 
    **API Keys**:
@@ -22,14 +22,14 @@ In this example laptop power battery level is read and based on the value the so
   - operation: A value of '1' to turn the device on and '0' to turn it off.
 - **Process**:
   1. **Generate Timestamp**: Creates a timestamp in UTC format.
-  1. **Create Content String**: Combines the API key and timestamp to create a content string.
-  1. **Generate HMAC Signature**: Uses the secret\_key and content string to generate a signature for the request.
-  1. **Define URL and Headers**: Sets the endpoint URL and headers needed for the request, including the timestamp, API key, and signature.
-  1. **Construct Request Data**: Prepares the JSON payload with the device ID, action, and desired device state.
-  1. **Send HTTP Request**: Sends a POST request to the MagIQ API with the headers and request data.
-  1. **Error Handling**: Catches and prints any request or JSON parsing errors.
+  2. **Create Content String**: Combines the API key and timestamp to create a content string.
+  3. **Generate HMAC Signature**: Uses the secret\_key and content string to generate a signature for the request.
+  4. **Define URL and Headers**: Sets the endpoint URL and headers needed for the request, including the timestamp, API key, and signature.
+  5. **Construct Request Data**: Prepares the JSON payload with the device ID, action, and desired device state.
+  6. **Send HTTP Request**: Sends a POST request to the MagIQ API with the headers and request data.
+  7. **Error Handling**: Catches and prints any request or JSON parsing errors.
 
-1. ### battery\_notifier.py
+3. ### battery\_notifier.py
    This script defines a class to monitor the battery status and notify accordingly.
 
 **Imports**:
@@ -43,7 +43,7 @@ In this example laptop power battery level is read and based on the value the so
   - **Print Battery Status**: Prints the battery level and whether it is plugged in or not.
   - **Return Current Percentage**: Returns the current battery percentage.
 
-1. ### Class: BatteryStatusNotifier 
+4. ### Class: BatteryStatusNotifier 
    ` `This class sets up a notifier to monitor battery status changes and notify the user accordingly.
 
 - **init(self)**: Initializes the class with self.hwnd (window handle) and self.previous\_percent (previous battery percentage) set to None.
@@ -57,12 +57,12 @@ In this example laptop power battery level is read and based on the value the so
 - **message\_loop(self)**:
   - Runs an infinite loop to check and update the battery status every 60 seconds continuously.
 
-1. ### Main.py
+5. ### Main.py
 ### This script is the entry point for the battery notifier.
 - **Main Block**:
   - Imports the BatteryStatusNotifier class from battery\_notifier.
   - Creates an instance of BatteryStatusNotifier and starts it.
-1. ### **Run Main.py**
+6. ### **Run Main.py**
    ### Notify on battery percentage change and operate device when battery level off (80%) and on (20%).
 ![](docimgs/4a36b2f3-004d-45e6-a7c1-342387b5b045.003.png)
 

@@ -79,7 +79,7 @@ This is the main script that handles image capture, gesture detection, and devic
 
 Detects gestures by analyzing hand landmarks and checks if the gesture duration is met to trigger the device control action.
 
-1. ### Main function
+7. ### Main function
 
 The main function that captures video, processes frames, detects gestures, and controls devices based on the detected gestures.
 

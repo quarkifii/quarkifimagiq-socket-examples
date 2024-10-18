@@ -22,17 +22,17 @@ Once the physical socket is available one needs to set it up using Quarkifi MagI
 
 ` `![](docimgs/f4cd6c3c-091b-4e42-ac82-5c400db318f0.002.png)      
 
-1. Login with Google account that was used to configure the Quarkifi MagIQ Smart Socket in the Android/iOS mobile APP
+2. Login with Google account that was used to configure the Quarkifi MagIQ Smart Socket in the Android/iOS mobile APP
 
 ![](docimgs/f4cd6c3c-091b-4e42-ac82-5c400db318f0.003.png)
 
 
 
-1. Copy and store API and Secret key 
+3. Copy and store API and Secret key 
 
 ![](docimgs/f4cd6c3c-091b-4e42-ac82-5c400db318f0.004.png)
 
-1. Scroll down to the Operate Quarkifi MagIQ Socket and select Python and copy the code
+4. Scroll down to the Operate Quarkifi MagIQ Socket and select Python and copy the code
 
 ![](docimgs/f4cd6c3c-091b-4e42-ac82-5c400db318f0.005.png)
 
