@@ -22,3 +22,13 @@
 
 All Examples then follow the same code as the reference to turn On or Off the Quarkifi MagIQ Smart Socket
 
+# Examples
+
+##### [Control Socket On/Off Based on Laptop Battery Level](examples/BatteryLevelBased)
+##### [Control Socket On/Off Based on Voice Command](examples/VoiceControl)
+##### [Control Socket On/Off Based on GPS Position](examples/GPSLocationBased)
+##### [Control Socket On/Off Based on Environment Temperature/Humidity](examples/WeatherBased)
+##### [Control Socket On/Off Based on Hand Gesture](examples/GestureBased)
+##### [Control Socket On/Off Based on WhatsAPP Message](examples/WhatsAppControl)
+
+
