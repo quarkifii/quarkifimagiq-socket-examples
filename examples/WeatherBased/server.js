@@ -13,8 +13,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.json())
 
 
-const apiKey = 'e28765b4-6a37-4c1c-bede-86b4d2e54f33'
-const secretKey = '7bc8e1b7-6132-4c1a-bffd-c260c2fd0037'
+const apiKey = '__COLLECT_API_KEY_FROM_MAGIQ_STORE__'
+const secretKey = '__COLLECT_SECRET_KEY_FROM_MAGIQ_STORE__'
+
 
 async function deviceOnOff(deviceId, operation) {
     console.log('deviceOnOff : ', deviceId, operation)
@@ -61,7 +62,7 @@ app.get('/api/weather/:lat/:lon', async (req, res) => {
         method: 'GET',
         url: `https://open-weather13.p.rapidapi.com/city/latlon/${lat}/${lon}`,
         headers: {
-          'x-rapidapi-key': 'f4879dac4dmshba24f0728b324e4p1d6a30jsna3a7028ff514',
+          'x-rapidapi-key': '__COLLECT_API_KEY_FROM_rapidapi__',
           'x-rapidapi-host': 'open-weather13.p.rapidapi.com'
         }
       };

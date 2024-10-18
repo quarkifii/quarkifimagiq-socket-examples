@@ -4,8 +4,8 @@ import hashlib
 import json
 from datetime import datetime, timezone
 
-api_key = 'b36d91f3-8945-497c-bedf-f847c0907247'
-secret_key = '104bee46-52cd-40bd-983b-f2b1d294de50'
+api_key = '__COLLECT_API_KEY_FROM_MAGIQ_STORE__'
+secret_key = '__COLLECT_SECRET_KEY_FROM_MAGIQ_STORE__'
 
 
 # Function to get device

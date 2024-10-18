@@ -5,8 +5,8 @@ const crypto = require('crypto')
 const app = express()
 const port = process.env.PORT || 3001
 
-const apiKey = 'e28765b4-6a37-4c1c-bede-86b4d2e54f33'
-const secretKey = '7bc8e1b7-6132-4c1a-bffd-c260c2fd0037'
+const apiKey = '__COLLECT_API_KEY_FROM_MAGIQ_STORE__'
+const secretKey = '__COLLECT_SECRET_KEY_FROM_MAGIQ_STORE__'
 
 // Middleware to parse JSON requests
 app.use(express.json())
