@@ -1,47 +1,19 @@
-﻿1. Go to the [magiq store](https://www.quarkifi.magiq.store/) 
+﻿# Battery Level Based Socket Power Control
 
-   ![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.001.png)     
+In this example laptop power battery level is read and based on the value the socket is turned ON or OFF. Before starting make sure to retrieve the apikey and apisecret as mentioned in [Main](/)
 
-1. Select Open API / Develop 
-
-` `![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.002.png)      
-
-1. Login with Google account that was used to login in the MagIQ app
-
-   ![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.003.png)
-
-
-
-1. Copy and store API and Secret key 
-
-   ![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.004.png)
-
-1. Scroll down to the Operate MagIQ Socket and Select Python and copy the code
-
-   ![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.005.png)
 1. ### Project Structure
-   ### ![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.006.png)
+### ![](docimgs/4a36b2f3-004d-45e6-a7c1-342387b5b045.001.png)
+1. ### Install required libraries
+   pip install -r requirements.txt
 
-1. ### **Requirements.txt**
-![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.007.png)
+   ![](docimgs/4a36b2f3-004d-45e6-a7c1-342387b5b045.002.png)
+1. ### magiq\_control.py
+   This script defines a function to control devices using the MagIQ API.
 
+   **API Keys**:
 
-
-1. ### **Install require libraries**
-
-pip install requests pywin32
-
-![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.008.png)**OR**
-
-pip install -r requirements.txt
-
-![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.009.png)
-1. #### ***magiq\_control.py***
-This script defines a function to control devices using the MagIQ API.
-
-**API Keys**:
-
-- api\_key and secret\_key: These placeholders should be replaced with your actual API key and secret key obtained from MagIQ.
+- api\_key and secret\_key: These placeholders should be replaced with your actual API key and secret key obtained from Quarkifi MagIQ portal.
 
 **Function: device\_on\_off(device\_id, operation)**: This function sends a command to turn a device on or off using the MagIQ API.
 
@@ -57,9 +29,8 @@ This script defines a function to control devices using the MagIQ API.
   1. **Send HTTP Request**: Sends a POST request to the MagIQ API with the headers and request data.
   1. **Error Handling**: Catches and prints any request or JSON parsing errors.
 
-- ![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.010.png)
-1. #### ***battery\_notifier.py***
-This script defines a class to monitor the battery status and notify accordingly.
+1. ### battery\_notifier.py
+   This script defines a class to monitor the battery status and notify accordingly.
 
 **Imports**:
 
@@ -72,9 +43,8 @@ This script defines a class to monitor the battery status and notify accordingly
   - **Print Battery Status**: Prints the battery level and whether it is plugged in or not.
   - **Return Current Percentage**: Returns the current battery percentage.
 
-- ![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.011.png)
-1. #### ***Class: BatteryStatusNotifier*** 
-` `This class sets up a notifier to monitor battery status changes and notify the user accordingly.
+1. ### Class: BatteryStatusNotifier 
+   ` `This class sets up a notifier to monitor battery status changes and notify the user accordingly.
 
 - **init(self)**: Initializes the class with self.hwnd (window handle) and self.previous\_percent (previous battery percentage) set to None.
 - **start(self)**:
@@ -87,15 +57,12 @@ This script defines a class to monitor the battery status and notify accordingly
 - **message\_loop(self)**:
   - Runs an infinite loop to check and update the battery status every 60 seconds continuously.
 
-![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.012.png)
-1. ### **Main.py**
-   ### This script is the entry point for the battery notifier.
+1. ### Main.py
+### This script is the entry point for the battery notifier.
 - **Main Block**:
   - Imports the BatteryStatusNotifier class from battery\_notifier.
   - Creates an instance of BatteryStatusNotifier and starts it.
-
-![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.013.png)
 1. ### **Run Main.py**
    ### Notify on battery percentage change and operate device when battery level off (80%) and on (20%).
-![](Aspose.Words.444e27fa-a50a-47c3-95b6-17fa165ae62c.014.png)
+![](docimgs/4a36b2f3-004d-45e6-a7c1-342387b5b045.003.png)
 
