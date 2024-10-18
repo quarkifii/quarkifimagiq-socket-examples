@@ -38,6 +38,6 @@ Once the physical socket is available one needs to set it up using Quarkifi MagI
 
 All Examples then follow the same code as the reference to turn On or Off the Quarkifi MagIQ Smart Socket
 
-
+For reporting any issue please mail us at support@quarkifi.com
 
 
