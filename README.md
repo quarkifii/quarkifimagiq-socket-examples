@@ -1,8 +1,20 @@
 ﻿# Quarkifi MagIQ Smart Socket Cloud API Examples
 
-Explore this repo to find varioud ways one can invoke Quarkifi MagIQ cloud APIs and control the smart socket on various use cases and develop smart energy management solutions
+Explore this repo to find various ways one can invoke Quarkifi MagIQ cloud APIs and control the smart socket on various use cases and develop smart energy management solutions.
+
+# Examples
+
+##### [Control Socket On/Off Based on Laptop Battery Level](examples/BatteryLevelBased)
+##### [Control Socket On/Off Based on Voice Command](examples/VoiceControl)
+##### [Control Socket On/Off Based on GPS Position](examples/GPSLocationBased)
+##### [Control Socket On/Off Based on Environment Temperature/Humidity](examples/WeatherBased)
+##### [Control Socket On/Off Based on Hand Gesture](examples/GestureBased)
+##### [Control Socket On/Off Based on WhatsAPP Message](examples/WhatsAppControl)
+
+# Setup
 
 To operate Quarkifi MagIQ Smart Socket using Cloud API one needs to procure the physical smart socket from the procurement site Quarkifi [MagIQ Store](https://www.quarkifi.magiq.store/)
+Once the physical socket is available one needs to set it up using Quarkifi MagIQ App available on android and iOS. Once setup one can use the cloud APIs to control the socket.
 
 ![](docimgs/f4cd6c3c-091b-4e42-ac82-5c400db318f0.001.png)     
 
@@ -26,13 +38,6 @@ To operate Quarkifi MagIQ Smart Socket using Cloud API one needs to procure the 
 
 All Examples then follow the same code as the reference to turn On or Off the Quarkifi MagIQ Smart Socket
 
-# Examples
 
-##### [Control Socket On/Off Based on Laptop Battery Level](examples/BatteryLevelBased)
-##### [Control Socket On/Off Based on Voice Command](examples/VoiceControl)
-##### [Control Socket On/Off Based on GPS Position](examples/GPSLocationBased)
-##### [Control Socket On/Off Based on Environment Temperature/Humidity](examples/WeatherBased)
-##### [Control Socket On/Off Based on Hand Gesture](examples/GestureBased)
-##### [Control Socket On/Off Based on WhatsAPP Message](examples/WhatsAppControl)
 
 
