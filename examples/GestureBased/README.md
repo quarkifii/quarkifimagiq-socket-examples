@@ -1,4 +1,4 @@
-﻿# Battery Level Based Socket Power Control
+﻿# Hand Gesture Based Socket Power Control
 
 In this example hand gesture is read and based on the gesture the socket is turned ON or OFF. Before starting make sure to retrieve the apikey and apisecret as mentioned in [Main](/)
 
