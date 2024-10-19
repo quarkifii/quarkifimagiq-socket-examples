@@ -2,6 +2,8 @@
 
 In this example hand gesture is read and based on the gesture the socket is turned ON or OFF. Before starting make sure to retrieve the apikey and apisecret as mentioned in [Main](/)
 
+[![Gesture Based](https://img.youtube.com/vi/7bMixHOmn1o/0.jpg)](https://www.youtube.com/watch?v=7bMixHOmn1o)
+
 1. ### Project Structure
 ![](docimgs/771564a6-d67c-42be-bf7a-f3ad4aaaed30.001.png)
 

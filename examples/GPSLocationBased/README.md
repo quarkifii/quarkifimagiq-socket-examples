@@ -2,6 +2,8 @@
 
 In this example GPS Location read and based on the location the socket is turned ON or OFF. Before starting make sure to retrieve the apikey and apisecret as mentioned in [Main](/)
 
+[![GPS Based](https://img.youtube.com/vi/wB6WX6lRPYk/0.jpg)](https://www.youtube.com/watch?v=wB6WX6lRPYk)
+
 1. ### Setup Web Server:
 
 1. cd magiq-server

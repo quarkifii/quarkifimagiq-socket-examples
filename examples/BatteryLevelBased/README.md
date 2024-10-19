@@ -2,6 +2,8 @@
 
 In this example laptop power battery level is read and based on the value the socket is turned ON or OFF. Before starting make sure to retrieve the apikey and apisecret as mentioned in [Main](/)
 
+[![Battery Usage](https://img.youtube.com/vi/g5Na9Uv9nZU/0.jpg)](https://www.youtube.com/watch?v=g5Na9Uv9nZU)
+
 1. ### Project Structure
 ### ![](docimgs/4a36b2f3-004d-45e6-a7c1-342387b5b045.001.png)
 1. ### Install required libraries
