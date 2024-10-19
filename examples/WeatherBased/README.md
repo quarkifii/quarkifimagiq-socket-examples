@@ -2,6 +2,7 @@
 
 In this example Weather data is read and based on the data( temp/humidity) the socket is turned ON or OFF. Before starting make sure to retrieve the apikey and apisecret as mentioned in [Main](/)
 
+#### Demo Video
 [![Weather Based](https://img.youtube.com/vi/g3UQCBl6TEs/0.jpg)](https://www.youtube.com/watch?v=g3UQCBl6TEs)
 
 1. In this example we would be using [Rapid API](https://rapidapi.com/hub) to get weather data and use that data to control Quarkifi MagIQ socket.
