@@ -1,6 +1,6 @@
 ﻿# Quarkifi MagIQ Smart Socket Cloud API Examples
 
-Explore this repo to find various ways one can invoke Quarkifi MagIQ cloud APIs and control the smart socket on various use cases and develop smart energy management solutions.
+Explore this repository to find various ways one can invoke Quarkifi MagIQ cloud APIs and control the smart socket on various use cases and develop smart energy management solutions.
 
 # Examples
 
