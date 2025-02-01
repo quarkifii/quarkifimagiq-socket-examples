@@ -1,4 +1,4 @@
 psutil~=6.0.0
 requests~=2.32.3
-setuptools~=68.2.0
-pywin32~=306
+setuptools~=75.8.0
+pywin32
